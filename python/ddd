@@ -1,0 +1,9 @@
+while True:
+    all_contact()
+    operation=input('What do you want to do? (add, delete, call, find, edit, quit)\n')
+    if operation=='quit': print('Byebye');break
+    elif operation=='add': print(add_contact(input('Enter name: '), input('Enter surname: '), input('Enter number: ')))
+    elif operation=='delete': print(delete_contact(input('Which contact do you want do delete? (enter name)\n')))
+    elif operation=='find': print(contact_by_number(input('Enter contact number: ')))
+    elif operation=='edit': print(edit_contact(input('Which contact do you want to edit?\n'),input('Enter new contact name: '), input('Enter new contact surname'), input('Enter new contact number: ')))
+    elif operation=='call': print('Sorry, stupid developers didnt add this function yet. Good luck')
